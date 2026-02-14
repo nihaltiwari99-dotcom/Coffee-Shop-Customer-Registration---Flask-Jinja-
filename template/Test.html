@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popup</title>
+<style>
+p{
+border:2px solid white;
+text-align:center;
+font-family:serif;
+}
+h2{
+text-decoration:underline;
+text-align:center;
+font-family:serif;
+}
+</style>
+</head>
+<body style="Background-color:#a96347;">
+{% for message in get_flashed_messages() %}
+  <p>{{ message }}</p>
+{% endfor %}
+
+<h2>Registration Completed!</h2>
+
+
+</body>
+</html>

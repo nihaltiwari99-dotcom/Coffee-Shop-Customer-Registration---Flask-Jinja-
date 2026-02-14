@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee House-Home </title>
+    <style>
+    ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #a96347;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-left: 10px;
+
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+
+
+form {
+    border:2px solid white;
+    background-color: #a96347;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+
+}
+
+fieldset {
+    border: none;
+}
+
+/* Legend */
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Text inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    padding: 8px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #4facfe;
+    color: white;
+}
+
+/* Reset button */
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Button hover */
+input[type="submit"]:hover {
+    background-color: #00c6ff;
+}
+
+input[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+
+<body style="
+    background-image: url('/static/0.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+">
+<h1 style="margin:5px ;padding:3 font-family:Verdana; color:white; font-size:50px;border:3px solid white;
+        text-align:Left;border-radius: 5px;background-color:#a96347;width:23%;" >Coffee House</h1>
+
+<ul>
+  <li><a href="/beans">Coffee Beans</a></li>
+  <li><a href="/abt">About Project</a></li>
+</ul>
+
+<div style="display:inline-block;margin-left:20px">
+  <form id="form" action="" method="post">
+  <fieldset>
+   <legend>Registration :</legend>
+   <label>First Name :</label>
+   <input type="text" id="fname" name="fname" placeholder=" Nihal"><br>
+   <label>Last Name :</label>
+   <input type="text" id="lname" name="lname" placeholder="Tiwari"><br>
+   <label>Gender :</label>
+    <label style="margin-right:15px;display:inline;">
+     <input type="radio" name="gen" value="Male"> Male
+    </label>
+
+    <label style="margin-right:15px;display:inline;">
+     <input type="radio" name="gen" value="Female"> Female
+    </label>
+
+    <label style="display:inline;">
+     <input type="radio" name="gen" value="Others"> Other
+    </label>
+   </span>
+   <label>Email ID : </label>
+   <input type="email" id="mail" name="mail" placeholder="abc@gmail.com"> <br>
+   <label>Mobile Number :</label>
+   <input type="tel" id="mob" name="mob" placeholder="example 9981456328"><br><br>
+   <input type="Submit" value="Submit">
+   <input type="Reset" value="Reset">
+  </fieldset>
+ </form>
+</div>
+<div style="display:inline-block">
+ <h1 style="font-family:Verdana; color:white; font-size: 60px;
+        margin:1; text-align:right;padding-right:60px;margin-left:690px;text-decoration: underline;">Welcome</h1>
+ <pre style="color:white;font-family:Verdana;font-size:60;margin:2px;padding:40px;text-align:right;font-weight:bold;">
+    "Coffee first, then the world can speak,<br>
+    A warm escape in every sip I seek.<br>
+    It fuels my dreams, both calm and bold,<br>
+    Liquid comfort, worth more than gold."<br>
+ </pre>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer style="position: absolute;color:white; background-color:#a96347;
+    bottom: 10px; width: 100%; text-align:right;padding-right: 50px;border-style: solid;
+    border: 1px solid white; border-radius: 5px;border-width: thin;width:95%;font-style:italic;">
+    A Project By Nihal Tiwari
+    </footer>
+</body>
+</html>

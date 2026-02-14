@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee House - Beans</title>
+
+  <style>
+  ul{
+   list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #a96347;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-right: 5px;
+  }
+
+   ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+.title {
+    font-weight: bold;
+  }
+
+
+
+  </style>
+</head>
+
+<body style="
+    height: 100vh;
+    overflow: hidden;
+    background-color:#a96347;
+    background-image:url(/static/backim2.jpg);
+">
+
+<h1 style="margin:5px ;padding:3 font-family:Verdana; color:white; font-size:50px;border:3px solid white;
+        text-align:Left;border-radius: 5px;background-color:#a96347;width:23%;" >Coffee Beans</h1>
+<ul>
+  <li><a href="{{ url_for('Home') }}">Home</a></li>
+  <li><a href="#" onclick="showContent('arabica')">Arabica</a></li>
+  <li><a href="#" onclick="showContent('robusta')">Robusta</a></li>
+  <li><a href="#" onclick="showContent('liberica')">Liberica</a></li>
+  <li><a href="#" onclick="showContent('excelsa')">Excelsa</a></li>
+</ul>
+
+<h2 style="text-decoration: underline;margin-left:20px">
+  History of Coffee Beans
+</h2>
+<pre style="color:white;font-size:25px;font-family:sarif;">
+    <span style = "text-decoration:underline;font-size:35px;font-style:bold;">History of Coffee Beans :</span><br>
+  9th Century, Ethiopia: Coffee discovered by a goat herder named Kaldi.
+  15th Century, Yemen: Cultivation and trade began; used by Sufi monks.
+  16th–17th Century, Middle East & Europe: Spread to Persia, Turkey, and Europe; coffee houses became social hubs.
+  17th–18th Century, Asia & Americas: Dutch brought it to Indonesia; introduced to the Caribbean and Brazil.
+  19th Century: Large-scale commercial coffee production, Brazil becomes top producer.
+  20th–21st Century: Instant coffee, espresso culture, specialty coffee, focus on sustainability and fair trade.
+</pre>
+
+<div id="arabica" class="coffee-section" style="display:none;">
+
+<p style="color:white;font-size:25px;">
+    <span style="font-size:35px;font-family:serif;text-decoration:underline;">Arabica</span><br><br>
+    <span class="title">Scientific name:</span> Coffea arabica <br>
+    <span class="title">Origin:</span> Native to the highlands of Ethiopia<br>
+    <span class="title">Growing conditions:</span> Prefers high altitudes, cooler temperatures, and tropical climates; delicate and harder to grow<br>
+    <span class="title">Bean shape:</span> Oval with a curved crease in the middle<br>
+    <span class="title">Flavor profile:</span> Smooth, mild, less bitter; often has fruity, nutty, or chocolatey notes<br>
+    <span class="title">Caffeine content:</span> Lower than Robusta (about 1–1.5%)<br>
+    <span class="title">Popularity:</span> Makes up 60–70% of global coffee production<br>
+    <span class="title">Price:</span> More expensive due to delicate growing requirements and superior flavor
+  </p>
+
+</div>
+
+<div id="robusta" class="coffee-section" style="display:none;">
+
+<p style="color:white;font-size:25px;">
+<span style="font-size:35px;font-family:serif;text-decoration:underline;">Robusta</span><br><br>
+
+<span class="title">Scientific name:</span> Coffea canephora (commonly known as Robusta)<br>
+<span class="title">Origin:</span> Native to central and western sub-Saharan Africa<br>
+<span class="title">Growing conditions:</span> Grows at lower altitudes, tolerates hotter climates; hardier and more resistant to pests and diseases<br>
+<span class="title">Bean shape:</span> Smaller and rounder than Arabica, with a straight crease in the middle<br>
+<span class="title">Flavor profile:</span> Strong, bold, more bitter; often described as earthy, woody, or grain-like, sometimes with chocolatey notes<br>
+<span class="title">Caffeine content:</span> Higher than Arabica (about 2–2.7%)<br>
+<span class="title">Popularity:</span> Accounts for about 30–40% of global coffee production<br>
+<span class="title">Price:</span> Less expensive than Arabica due to easier cultivation and higher yields
+  </p>
+</div>
+
+
+<div id="liberica" class="coffee-section" style="display:none;">
+
+  <p style="color:white;font-size:25px;">
+    <span style="font-size:35px;font-family:serif;text-decoration:underline;">Liberica</span><br><br>
+    <span class="title">Scientific name:</span> Coffea Liberica<br>
+    <span class="title">Origin:</span> Native to West and Central Africa<br>
+    <span class="title">Growing conditions:</span> Grows in low to medium altitudes; requires humid, tropical climates; more tolerant of harsh conditions than Arabica but less common than Robusta<br>
+    <span class="title">Bean shape:</span> Large and irregularly shaped, often asymmetrical with a “hooked” end<br>
+    <span class="title">Flavor profile:</span> Distinctive, smoky, floral, and fruity; sometimes described as woody or nutty with a full body<br>
+    <span class="title">Caffeine content:</span> Moderate, between Arabica and Robusta (about 1.2–1.8%)<br>
+    <span class="title">Popularity:</span> Represents a small fraction of coffee production, often used in blends<br>
+    <span class="title">Price:</span> Generally more expensive than Robusta due to rarity and lower yield
+  </p>
+</div>
+
+
+<div id="excelsa" class="coffee-section" style="display:none;">
+  <p style="color:white;font-size:25px;">
+    <span style="font-size:35px;font-family:serif;text-decoration:underline;">Excelsa</span><br><br>
+    <span class="title">Scientific name:</span> : Coffea excelsa<br>
+    <span class="title">Origin:</span> Native to Southeast Asia, mainly the Philippines and surrounding regions<br>
+    <span class="title">Growing conditions:</span> Grows in low to medium altitudes; thrives in humid, tropical climates; often used in blends to add tart, fruity notes<br>
+    <span class="title">Bean shape:</span> Medium-sized, often oval and slightly elongated with a somewhat irregular crease<br>
+    <span class="title">Flavor profile:</span>Tart, fruity, and sometimes wine-like; has a full body with a unique, complex taste that can be both dark and bright<br>
+    <span class="title">Caffeine content:</span> Moderate, similar to Arabica (about 1.5–1.8%)<br>
+    <span class="title">Popularity:</span> Rare globally; mostly used in specialty blends or for unique flavor profiles<br>
+    <span class="title">Price:</span> Generally more expensive than Robusta due to rarity and limited cultivation
+  </p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+function showContent(coffeeType) {
+    let historyContent = document.querySelector('pre');
+     if(historyContent) {
+     historyContent.style.display = 'none';
+}
+    let sections = document.querySelectorAll('.coffee-section');
+    sections.forEach(section => section.style.display = 'none');
+    document.getElementById(coffeeType).style.display = 'block';
+}
+</script>
+
+
+
+
+
+
+  <footer style="position: absolute;color:white; background-color:#a96347;
+    bottom: 10px; width: 100%; text-align:right;padding-right: 50px;border-style: solid;
+    border: 1px solid white; border-radius: 5px;border-width: thin;width:95%;font-style:italic;">
+    A Project By Nihal Tiwari
+    </footer>
+</body>
+</html>
